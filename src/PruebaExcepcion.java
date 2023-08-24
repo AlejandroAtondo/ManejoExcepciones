@@ -17,17 +17,18 @@ public class PruebaExcepcion extends NumeroNegativoException{
                 System.out.println("La raíz cuadrada es: " + raiz);
 
             } else {
-                throw new NumeroNegativoException();
+                throw new NumeroNegativoException("Error, se ha ingresado un número negativo");
 
             }
         }catch(NumeroNegativoException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error " + e.getMessage());
 
         }catch(Exception e) {
             System.out.println("Error, " + e.getMessage());
 
         }finally {
             s.close();
+
         }
     }
 }

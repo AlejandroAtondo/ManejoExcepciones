@@ -16,7 +16,6 @@ public class Main {
         lectTeclado.close();
     }
 
-
     public static void caracterEn(String frase, int num) {
         try {
             System.out.println("El caracter en la posición: " +
@@ -27,7 +26,5 @@ public class Main {
                     " de la cadena de caracteres que no existe");
 
         }
-
-
     }
 }
